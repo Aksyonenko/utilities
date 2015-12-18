@@ -82,7 +82,7 @@
                 <md-input-container>
                     <label>Electricity</label>
                     <input ng-model="utility.electricity" type="number" step="1" ng-change="countSummary()"
-                           ng-required="true" ng-model-options="{debounce: {'default': 1000, 'blur': 0}}">
+                           ng-required="true">
                 </md-input-container>
                 <md-input-container>
                     <label>Gas</label>
@@ -105,8 +105,7 @@
                 </md-input-container>
                 <md-input-container>
                     <label>Summary(disabled)</label>
-                    <input ng-model="utility.summary" type="number" step="0.01" disabled
-                           ng-model-options="{debounce: 5000}">
+                    <input ng-model="utility.summary" type="number" step="0.01" disabled >
                 </md-input-container>
                 <md-button class="md-raised md-primary" ng-click="clear()">Clear</md-button>
                 <md-button class="md-raised md-primary" ng-click="saveUtilities()">Save</md-button>
